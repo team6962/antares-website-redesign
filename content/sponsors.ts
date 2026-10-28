@@ -47,10 +47,12 @@ export type BudgetLine = { label: string; percent: number; note: string };
 
 export const sponsorTiers: SponsorTier[] = data.sponsorTiers;
 
-/** Logos shown in the home page marquee, in order: everything but bronze. */
-export const featuredSponsors: Sponsor[] = sponsorTiers
-  .filter((tier) => tier.id !== "bronze")
-  .flatMap((tier) => tier.sponsors);
+/**
+ * Logos shown in the home page marquee, highest tier first. Sponsors with no
+ * logo file yet are skipped by the marquee itself, so they can sit on the
+ * sponsors page as a name without leaving a gap here.
+ */
+export const featuredSponsors: Sponsor[] = sponsorTiers.flatMap((tier) => tier.sponsors);
 
 /** 2026-27 partnership levels. Each level adds to the one before it. */
 export const partnershipLevels: PartnershipLevel[] = data.partnershipLevels;

@@ -1,77 +1,35 @@
 {
   "sponsorTiers": [
     {
-      "id": "platinum",
-      "name": "Platinum",
-      "blurb": "Partners whose support underwrites an entire season of building.",
+      "id": "antares-mission",
+      "name": "Antares Mission",
+      "blurb": "A cornerstone partnership that carries the whole season.",
       "sponsors": [
         {
-          "name": "PowerTec",
-          "logo": "/sponsor-logos/PowerTec-logo.svg",
-          "width": 1252,
-          "height": 144
-        },
-        {
-          "name": "SmugMug",
-          "logo": "/sponsor-logos/SmugMug-logo.svg",
-          "width": 550,
-          "height": 119
+          "name": "Inworld"
         }
       ]
     },
     {
-      "id": "gold",
-      "name": "Gold",
-      "blurb": "Partners who keep the robot, the tools and the travel funded.",
+      "id": "interstellar",
+      "name": "Interstellar",
+      "blurb": "Partners funding build-season materials and tooling.",
       "sponsors": [
-        {
-          "name": "GlobalLogic",
-          "logo": "/sponsor-logos/GlobalLogic-logo.svg",
-          "width": 800,
-          "height": 182
-        },
-        {
-          "name": "Legion Technologies",
-          "logo": "/sponsor-logos/Legion_Technologies-logo.svg",
-          "width": 800,
-          "height": 143
-        }
-      ]
-    },
-    {
-      "id": "silver",
-      "name": "Silver",
-      "blurb": "Companies and foundations backing students across the program.",
-      "sponsors": [
-        {
-          "name": "Abbott Laboratories",
-          "logo": "/sponsor-logos/Abbott_Laboratories-logo.webp",
-          "width": 1000,
-          "height": 250
-        },
-        {
-          "name": "CMS",
-          "logo": "/sponsor-logos/CMS-logo.webp",
-          "width": 998,
-          "height": 366
-        },
-        {
-          "name": "Altair Engineering",
-          "logo": "/sponsor-logos/Altair_Engineering-logo.svg",
-          "width": 263,
-          "height": 54
-        },
         {
           "name": "Apple",
           "logo": "/sponsor-logos/Apple-logo.svg",
           "width": 44,
           "height": 54
-        },
+        }
+      ]
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "blurb": "Partners covering registration, parts and outreach events.",
+      "sponsors": [
         {
-          "name": "General Catalyst",
-          "logo": "/sponsor-logos/General_Catalyst-logo.svg",
-          "width": 400,
-          "height": 54
+          "name": "Google"
         },
         {
           "name": "Gene Haas Foundation",
@@ -83,35 +41,16 @@
           "relationship": "Their grant goes straight into the shop: stock aluminum, cutting tools and the consumables a room full of 6th graders gets through while learning to machine. It is the part of the budget that lets students practice on real material before they cut a real part."
         },
         {
-          "name": "HalloApp",
-          "logo": "/sponsor-logos/HalloApp-logo.svg",
-          "width": 259,
-          "height": 54
+          "name": "CMS",
+          "logo": "/sponsor-logos/CMS-logo.webp",
+          "width": 998,
+          "height": 366
         },
         {
-          "name": "Saints Capital",
-          "logo": "/sponsor-logos/Saints_Capital-logo.svg",
-          "width": 170,
-          "height": 42
-        }
-      ]
-    },
-    {
-      "id": "bronze",
-      "name": "Bronze",
-      "blurb": "Supporters who help cover registration, materials and outreach.",
-      "sponsors": [
-        {
-          "name": "Lockheed Martin"
-        },
-        {
-          "name": "PG&E"
-        },
-        {
-          "name": "Intuitive Foundation"
-        },
-        {
-          "name": "FIRST NorCal"
+          "name": "SmugMug",
+          "logo": "/sponsor-logos/SmugMug-logo.svg",
+          "width": 550,
+          "height": 119
         }
       ]
     }

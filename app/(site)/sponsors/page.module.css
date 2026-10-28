@@ -40,19 +40,39 @@
   list-style: none;
 }
 
+/* A tier can hold a single sponsor. auto-fit collapses the unused tracks and
+   lets that one card absorb the whole row, stranding a logo in the middle of
+   a 1200px box. Capping the grid item and centring it keeps one sponsor the
+   same size as one of four, while a full row still divides evenly. The cap is
+   on the <li>, which is the grid item; .logoCell is the button inside it. */
+.logoGrid > li {
+  width: 100%;
+  max-width: 320px;
+  justify-self: center;
+}
+
 /* Higher tiers get more room, so the visual weight matches the contribution. */
-.logoGrid[data-tier="platinum"] {
+.logoGrid[data-tier="antares-mission"] {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.logoGrid[data-tier="gold"] {
+.logoGrid[data-tier="antares-mission"] > li {
+  max-width: 420px;
+}
+
+.logoGrid[data-tier="interstellar"] {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.logoGrid[data-tier="interstellar"] > li {
+  max-width: 360px;
 }
 
 /* Nearly every sponsor logo is drawn dark for a white page, so on the light
    page a quiet card is enough. Inside a dark panel they need a light plate. */
 .logoCell {
   display: grid;
+  width: 100%;
   place-items: center;
   min-height: 132px;
   padding: 28px 32px;
@@ -78,7 +98,7 @@
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
 }
 
-.logoGrid[data-tier="platinum"] .logoCell {
+.logoGrid[data-tier="antares-mission"] .logoCell {
   min-height: 176px;
 }
 
@@ -89,7 +109,7 @@
   object-fit: contain;
 }
 
-.logoGrid[data-tier="platinum"] .logo {
+.logoGrid[data-tier="antares-mission"] .logo {
   height: clamp(42px, 5vw, 62px);
 }
 

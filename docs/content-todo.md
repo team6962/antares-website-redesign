@@ -107,43 +107,26 @@ or through /admin:
 
 Sponsor websites are also empty. Those need checking rather than guessing.
 
-## 7. Sponsor list — `content/sponsors.ts`
-
-The sponsor deck lists Google among past supporters, and the website does not.
-Confirm whether Google belongs on the sponsors page and, if so, which tier and
-whether we have permission to use the logo.
-
-## 8. A longer hero video
+## 7. A longer hero video
 
 `public/video/hero.mp4` is a 20-second cut of the team's own match footage,
 starting at 1:01 of the original recording. If there is better footage, or a
 cut the team prefers, replace that file and its poster frame together.
 `public/video/README.md` has the format requirements.
 
-## 9. Which tier each current sponsor belongs to
+## 8. Two sponsors need a logo
 
-The sponsor wall still groups companies as Platinum, Gold, Silver and Bronze,
-which are not the tier names we now use anywhere else. The chief mentor asked
-for them to be translated into Spark, Stellar, Interstellar, Supergiant and
-Antares Mission, and said the actual donation amounts have to be checked first
-to work out who lands where. Nobody should guess this: putting a sponsor in the
-wrong tier is worse than leaving the old labels up.
+The wall is now the six 2026-27 partners in the current tiers. **Inworld** and
+**Google** have no logo file, so the wall shows their name as text and the
+home page marquee skips them, which is why it carries four logos rather than
+six.
 
-Once the amounts are known it is a data change in `content/data/sponsors.json`
-or at /admin: rename each group under `sponsorTiers` and move companies between
-them. The eighteen companies currently sit like this:
+Drop an SVG or WebP into `public/sponsor-logos/` and add `logo`, `width` and
+`height` to the entry in `content/data/sponsors.json`, or do it at /admin.
+Google's marks have their own usage rules, so check we are allowed to use it
+before it goes up.
 
-| Current group | Companies |
-| --- | --- |
-| Platinum | PowerTec, SmugMug |
-| Gold | GlobalLogic, Legion Technologies |
-| Silver | Abbott Laboratories, CMS, Altair Engineering, Apple, General Catalyst, Gene Haas Foundation, HalloApp, Saints Capital |
-| Bronze | Lockheed Martin, PG&E, Intuitive Foundation, FIRST NorCal |
-
-Until that happens the sponsors page uses "tier" for both groupings, which is
-the terminology the mentor picked but reads oddly while two systems coexist.
-
-## 10. Google Drive links that need sharing turned on
+## 9. Google Drive links that need sharing turned on
 
 The chief mentor supplied Drive links for the FIRST Responders video and for
 five robots: M.R. Left, Optimus Climb, Pythagorean Cannon, Arm2D2 and RedEVA.
@@ -155,7 +138,7 @@ Either set each file to **Anyone with the link > Viewer**, or give us public
 URLs, such as the video on YouTube. Then the history page can link them. The
 file IDs are in the mentor's review PDF, dated 7 October 2026.
 
-## 11. Enable previews on the team internal document
+## 10. Enable previews on the team internal document
 
 `/internal` embeds the team document, and the frame is blank for everyone
 because that document has previews switched off. `/preview` is the only form
