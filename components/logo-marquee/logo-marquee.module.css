@@ -1,8 +1,25 @@
+/* Defined here, not in globals.css. CSS Modules rewrites both `animation`
+   and `@keyframes` names in this file to the same scoped identifier; a
+   keyframes block in a global stylesheet keeps its plain name and never
+   matches, so the track silently sat still. */
+@keyframes antares-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 .viewport {
   position: relative;
   overflow: hidden;
-  /* Fade the logos out at both edges instead of cutting them off. */
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  /* Fade the logos out at both edges instead of cutting them off mid-letter
+     as they drift past. Fixed pixels, not a percentage: at 8% the fade was
+     30px on a phone and ~115px on a desktop, wide enough to wash out the
+     whole of whichever logo sat at the left edge. The point is to soften the
+     cut, which takes the same short distance at any width. */
+  mask-image: linear-gradient(90deg, transparent 0, #000 32px, #000 calc(100% - 32px), transparent 100%);
 }
 
 .track {
