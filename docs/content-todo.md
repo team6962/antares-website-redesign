@@ -113,23 +113,16 @@ starting at 1:01 of the original recording. If there is better footage, or a
 cut the team prefers, replace that file and its poster frame together.
 `public/video/README.md` has the format requirements.
 
-## 8. Google's logo needs written permission
+## 8. Where the newest sponsor logos came from
 
-The wall shows **Google** as text rather than a logo, which is deliberate.
-Google's brand terms require express written permission before a third party
-displays the Google logo, and say the logo must not be used in a way that
-implies a relationship that does not exist. Naming a sponsor in text carries
-none of that; publishing the mark without approval does.
+All six partners have a logo. Two are worth a note if anyone revisits them:
 
-If the team already has written approval from Google, or gets it through
-[Google's brand permission request form](https://support.google.com/contact/brand_request_form),
-drop the approved file into `public/sponsor-logos/` and add `logo`, `width`
-and `height` to the entry. The text treatment is a perfectly good permanent
-answer if approval is not forthcoming.
-
-Inworld's wordmark was taken from inworld.ai, where it is served inline on
-their own homepage. Worth a sentence to them confirming it is the mark they
-want used.
+- **Google** was supplied by the team, who confirmed Google has given
+  permission. Google's brand terms require that permission in writing, so if
+  the file is ever replaced, check the approval still covers it.
+- **Inworld** was taken from inworld.ai, where the wordmark is served inline
+  on their homepage, rather than from a brand kit they handed over. Worth a
+  sentence to them confirming it is the mark they want used.
 
 ## 9. Google Drive links that need sharing turned on
 

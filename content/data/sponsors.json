@@ -33,7 +33,10 @@
       "blurb": "Partners covering registration, parts and outreach events.",
       "sponsors": [
         {
-          "name": "Google"
+          "name": "Google",
+          "logo": "/sponsor-logos/Google-logo.webp",
+          "width": 435,
+          "height": 144
         },
         {
           "name": "Gene Haas Foundation",
