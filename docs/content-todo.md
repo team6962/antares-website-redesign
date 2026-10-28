@@ -91,21 +91,20 @@ The 2024 and 2025 posts are PDFs in `public/blog-PDFs/` and are fine.
 
 ## 6. Sponsor descriptions
 
-> **One of these is placeholder text written to show the design, and has to go
-> before anyone outside the team sees it.** The Gene Haas Foundation entry has
-> a real website and a description taken from the foundation's own mission
-> statement, but the "With Antares" paragraph was invented to fill the space.
-> Replace it with what the grant actually pays for, or delete it.
-
-
-Clicking a sponsor logo opens a panel. It shows the tier and a link, and will
-show two more things once someone writes them, in `content/data/sponsors.json`
-or through /admin:
+Clicking a sponsor opens a panel. It shows the tier and a link, and will show
+two more things once someone writes them, in `content/data/sponsors.json` or
+through /admin:
 
 - **About the company** — one or two sentences on what they do.
 - **Their relationship with Antares** — what they give and what it pays for.
 
-Sponsor websites are also empty. Those need checking rather than guessing.
+Every one of the six is currently empty. The Gene Haas Foundation used to have
+both, but the "With Antares" paragraph had been invented to show the design
+and was removed along with the description it sat under. Write these from what
+the sponsor actually gives, not from what sounds plausible.
+
+Sponsor websites: Inworld and the Gene Haas Foundation have one. Apple, Google,
+CMS and SmugMug do not, and those need checking rather than guessing.
 
 ## 7. A longer hero video
 
@@ -114,17 +113,23 @@ starting at 1:01 of the original recording. If there is better footage, or a
 cut the team prefers, replace that file and its poster frame together.
 `public/video/README.md` has the format requirements.
 
-## 8. Two sponsors need a logo
+## 8. Google's logo needs written permission
 
-The wall is now the six 2026-27 partners in the current tiers. **Inworld** and
-**Google** have no logo file, so the wall shows their name as text and the
-home page marquee skips them, which is why it carries four logos rather than
-six.
+The wall shows **Google** as text rather than a logo, which is deliberate.
+Google's brand terms require express written permission before a third party
+displays the Google logo, and say the logo must not be used in a way that
+implies a relationship that does not exist. Naming a sponsor in text carries
+none of that; publishing the mark without approval does.
 
-Drop an SVG or WebP into `public/sponsor-logos/` and add `logo`, `width` and
-`height` to the entry in `content/data/sponsors.json`, or do it at /admin.
-Google's marks have their own usage rules, so check we are allowed to use it
-before it goes up.
+If the team already has written approval from Google, or gets it through
+[Google's brand permission request form](https://support.google.com/contact/brand_request_form),
+drop the approved file into `public/sponsor-logos/` and add `logo`, `width`
+and `height` to the entry. The text treatment is a perfectly good permanent
+answer if approval is not forthcoming.
+
+Inworld's wordmark was taken from inworld.ai, where it is served inline on
+their own homepage. Worth a sentence to them confirming it is the mark they
+want used.
 
 ## 9. Google Drive links that need sharing turned on
 
