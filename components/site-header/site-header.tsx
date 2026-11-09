@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { primaryAction, siteNavigation } from "@/lib/site-navigation";
+import { internalAction, primaryAction, siteNavigation } from "@/lib/site-navigation";
 import styles from "./site-header.module.css";
 import { asset } from "@/lib/asset";
 
@@ -88,6 +88,16 @@ export function SiteHeader() {
           <Link className={styles.cta} href={primaryAction.href}>
             {primaryAction.label}
           </Link>
+          {/* Team-only, and it leaves the site: the document opens in Google
+              Docs in a new tab rather than in the frame on /internal. */}
+          <a
+            className={styles.link}
+            href={internalAction.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {internalAction.label}
+          </a>
         </nav>
 
         <button
@@ -124,6 +134,16 @@ export function SiteHeader() {
           >
             {primaryAction.label}
           </Link>
+          <a
+            className={styles.drawerLink}
+            href={internalAction.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ "--drawer-index": siteNavigation.length + 1 } as React.CSSProperties}
+            onClick={() => setMenuOpen(false)}
+          >
+            {internalAction.label}
+          </a>
         </nav>
       </div>
     </header>
